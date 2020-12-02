@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Checkout</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="login.css">
+  <link rel="stylesheet" type="text/css" href="home.css">
+  <link rel="stylesheet" type="text/css" href="checkout.css">
+	<link rel="stylesheet" type="text/css" href="beli.css">
+</head>
+<div class="header" >
+	   <div class="sub-header">
+                <div class="logo">
+                </div>
+                 <img src="logoo.png" style="height: 95px; width: 150px">
+                <ul class="right-menu">
+                    <li><a href="produkk.html">Produk</a></li>
+                    <li><a href="home.html">Profil</a></li>
+                    <li><a href="acara.html">Acara</a></li>
+                    <li><a class="on">Keranjang</a></li>
+                    <li><a class="button" href="Login.html">LogOut</a></li>
+                </ul>
+	</div>
+
+<body>
+<div class="card">
+  <img src="kemejabatikpria.png" alt="bajubatikpria" style="width:100%">
+  <p>Baju Batik Pria</p>
+  <p class="price">Rp 150.000</p>
+  <p>Baju Batik Pria, yang merupakan batik ciri khas Jember Asli dengan kualitas tinggi.</p>
+  <p><button id="myBtnn">Keep</button></p>
+  <script>
+document.getElementById("myBtnn").addEventListener("click", function() {
+  alert("Anda Telah Memesan Produk ini");
+});
+</script>
+</div>
+<div class="form-style-3">
+<form>
+<fieldset><legend>Personal</legend>
+  <label for="field1"><span>Nama </font><span class="required">*</span></span>
+  	<input type="text" class="input-field" name="field1" value="" /></label>
+  	<label for="field2"><span>Email <span class="required">*</span></span>
+  		<input type="email" class="input-field" name="field2" value="" />
+  	</label>
+  	<label for="field3"><span>Telepon<span class="required">*</span></span>
+  		<input type="text" class="input-field" name="field3" value="" />
+  	</label>
+  	<label for="field4"><span>Alamat <span class="required">*</span></span>
+  		<input type="text" class="input-field" name="field4" value="" />
+  	</label>
+  	 	<label for="field5"><span>Metode Pembayaran </span><select name="field5" class="select-field">
+  <option value="COD">COD</option>
+  <option value="Transfer">Transfer</option>
+  <option value="Mart">Indomaret/Alfamart</option>
+</select></label>
+		<label for="field6"><span>Ekspedisi </span><select name="field6" class="select-field">
+  <option value="JNT">JNT</option>
+  <option value="JNE">JNE</option>
+  <option value="SiCepat">SiCepat</option>
+</select></label>
+</fieldset>
+<fieldset><legend>Message</legend>
+  <label for="field7"><span>Message <span class="required">*</span></span><textarea name="field7" class="textarea-field"></textarea></label>
+  <label><span>&nbsp;</span><button id="myBtn"><input type="submit" value="Setuju"/></label></button>
+<script>
+document.getElementById("myBtn").addEventListener("click", function() {
+  alert("Data Anda telah masuk");
+});
+</script>
+</fieldset>
+</form>
+</div>
+
+</body>
+</html>
+	
+</div>
+</body>
+</html>

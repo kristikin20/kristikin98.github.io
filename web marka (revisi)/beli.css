@@ -1,0 +1,207 @@
+
+.menu{
+  width: 550px;
+  float: right;
+  font-family: sans-serif;
+}
+.menu ul li{
+  float: left;
+    list-style: none;
+    min-width: 120px;
+    height: 30px;
+    border-radius: 3px;
+    line-height: 30px;
+    margin: 2px 0px;
+}
+
+.menu ul li a{
+  display: block;
+    text-align: center;
+    border-radius: 3px;
+    letter-spacing: -0.2px;
+    color: white;
+    text-decoration: none;
+    font-size: 14px;
+    margin: 0px;
+    padding: 0px 8px;
+}
+
+
+.menu ul li a:hover{
+    color: #bdbdbd;
+    background-color: rgba(0,0,0,0.2);
+}
+
+.menu ul .on{
+  background: rgba(255,255,255,0.4);
+}
+
+.menu ul ul {
+    position: absolute;
+    width: 140px;
+    padding: 20px 5px;
+    background color: white;
+    display: none;
+    text-align: center;
+    padding: 3px 15px;
+}
+
+.menu ul ul li {
+    display: block;
+    background color: white;
+    color: white;
+    padding: 3px 15px;
+    margin-left: -30px;
+}
+
+.menu ul ul li:hover {
+    background color: white;
+    color: gray;
+    padding: 3px 15px;
+    margin-left: -30px;
+}
+
+.menu ul li:hover ul {
+    display: block;
+}
+*
+{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+body
+{
+    background:url(untitled_page.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    font-family: 'pecita', hand;
+    color: black;
+}
+
+.card {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  max-width: 420px;
+  margin: auto;
+  float: right;
+  text-align: center;
+  font-family: arial;
+  background-color: white;
+}
+
+.price {
+  color: grey;
+  font-size: 22px;
+}
+
+.card button {
+  border: none;
+  outline: 0;
+  padding: 12px;
+  color: white;
+  background-color:brown;
+  text-align: center;
+  cursor: pointer;
+  width: 100%;
+  font-size: 18px;
+}
+
+.card button:hover {
+  opacity: 0.7;
+}
+
+<style type="text/css">
+.form-style-3{
+  max-width: 450px;
+  font-family: "Lucida Sans Unicode", "Lucida Grande", sans-serif;
+}
+.form-style-3 label{
+  display:block;
+  margin-bottom: 10px;
+}
+.form-style-3 label > span{
+  float: left;
+  width: 100px;
+  color: black;
+  font-weight: bold;
+  font-size: 13px;
+  text-shadow: 1px 1px 1px #fff;
+}
+.form-style-3 fieldset{
+  border-radius: 10px;
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  margin: 0px 0px 10px 0px;
+  border: 1px solid brown;
+  padding: 20px;
+  background: #F5F5F5;
+  box-shadow: inset 0px 0px 15px #FFE5E5;
+  -moz-box-shadow: inset 0px 0px 15px #FFE5E5;
+  -webkit-box-shadow: inset 0px 0px 15px #FFE5E5;
+}
+.form-style-3 fieldset legend{
+  color: black;
+  border-top: 1px solid brown;
+  border-left: 1px solid brown;
+  border-right: 1px solid brown;
+  border-radius: 5px 5px 0px 0px;
+  -webkit-border-radius: 5px 5px 0px 0px;
+  -moz-border-radius: 5px 5px 0px 0px;
+  background: #FFE5E5;
+  padding: 0px 8px 3px 8px;
+  box-shadow: -0px -1px 2px 1;
+  -moz-box-shadow:-0px -1px 2px gainsboro;
+  -webkit-box-shadow:-0px -1px 2px gainsboro;
+  font-weight: normal;
+  font-size: 12px;
+}
+.form-style-3 textarea{
+  width:250px;
+  height:100px;
+}
+.form-style-3 input[type=text],
+.form-style-3 input[type=email],
+.form-style-3 input[type=te],
+.form-style-3 input[type=number],
+.form-style-3 input[type=search],
+.form-style-3 input[type=time],
+.form-style-3 input[type=url],
+.form-style-3 input[type=email],
+.form-style-3 select, 
+.form-style-3 textarea{
+  border-radius: 3px;
+  -webkit-border-radius: 3px;
+  -moz-border-radius: 3px;
+  border: 1px solid ;
+  outline: none;
+  color: black;
+  padding: 5px 8px 5px 8px;
+  box-shadow: inset 1px 1px 4px brown;
+  -moz-box-shadow: inset 1px 1px 4px brown;
+  -webkit-box-shadow: inset 1px 1px 4px brown;
+  background: #FFEFF6;
+  width:50%;
+
+}
+.form-style-3  input[type=submit],
+.form-style-3  input[type=button]{
+  background: #FFE5E5;
+  border: 1px solid brown;
+  padding: 5px 15px 5px 15px;
+  color: black;
+  box-shadow: inset -1px -1px 3px #FF62A7;
+  -moz-box-shadow: inset -1px -1px 3px #FF62A7;
+  -webkit-box-shadow: inset -1px -1px 3px #FF62A7;
+  border-radius: 3px;
+  border-radius: 3px;
+  -webkit-border-radius: 3px;
+  -moz-border-radius: 3px;  
+  font-weight: bold;
+}
+.form-style-3 .required{
+  color:black;
+  font-weight:normal;
+}
+</style>

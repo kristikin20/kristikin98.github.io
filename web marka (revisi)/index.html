@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Login</title>
+    <link rel="stylesheet" href="login.css">
+</head>
+
+<body>
+    <br>
+    <div class="bahasa">
+        <select name="bahasa" id="bahasa">
+            <option value="Bahasa Indonesia">Bahasa Indonesia</option>
+            <option value="Inggris">Inggris</option>
+        </select>
+
+    </div>
+
+    <h1>Kristik.in</h1>
+    <div class="kotak">
+        <form class="form">
+            <div id="demo">
+
+            </div>
+            <p>
+                <input type="text" name="" value=""  placeholder="Nama Pengguna atau Email" id="username"><br>
+                <input type="text" name="" value="" placeholder="Kata Sandi" id="password"><br>
+                <button type="submit" value="submit" name="login" onclick="myFunction()"><a href="#">Masuk</a></button>
+            </p>
+            Lupa detail masuk anda? Dapatkan bantuan masuk. <a href="lupakatasandi.html">Klik disini</a>
+
+            <hr>
+            <h4>ATAU</h4>
+            <hr>
+            <br>
+            Tidak punya akun? <a href="registrasi.html"> Buat Akun</a>
+            <br><br>
+        </form>
+    </div>
+<script>
+      function myFunction() {
+      var x,y, text;
+      // Get the value of the input field with id="numb"
+      x = document.getElementById("username").value;
+      y = document.getElementById("password").value;
+
+      // If x is Not a Number or less than one or greater than 10
+      if (x === "um" && y === "123") {
+          window.location.href="home.html";
+      } else {
+        text = "Username/Password Salah";
+        document.getElementById("demo").innerHTML = text;
+      }
+    }
+  </script>
+</body>
+
+</html>

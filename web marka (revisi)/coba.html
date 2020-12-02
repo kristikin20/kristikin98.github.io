@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>preview image before uploading</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="login.css">
+	<link rel="stylesheet" type="text/css" href="home.css">
+	<link rel="stylesheet" type="text/css" href="checkout.css">
+</head>
+<body>
+<div class="header">
+	  <div class="sub-header">
+                <div class="logo">
+                </div>
+                 <img src="logoo.png" style="height: 95px; width: 150px">
+                <ul class="right-menu">
+                    <li><a href="produkk.html">Produk</a></li>
+                    <li><a href="home.html">Profil</a></li>
+                    <li><a href="acara.html">Acara</a></li>
+                    <li><a class="on">Keranjang</a></li>
+                    <li><a class="button" href="Login.html">LogOut</a></li>
+                </ul>
+		</div>
+<center>
+    <label>Choose A image</label><br/><br/>
+    <input type="file" id="file-field" onchange="previewImage(event)"><br/><br/>
+    <div><img src="rekomendasi.jpg" width="200" height="250" id="image-field"></div> 
+</center>
+
+<script type="text/javascript">
+    function previewImage() {
+        var reader = new FileReader();
+        var imageField = document.getElementsById('image-field')
+
+        reader.onload = function(){
+            if(reader.readystate=2){
+                imageField.src = reader.result;
+            }
+        } 
+        reader.readAsDataURL(event.target.files[0]);
+
+
+    }
+</script>
+

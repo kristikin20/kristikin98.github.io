@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Beli Produk</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="login.css">
+	<link rel="stylesheet" type="text/css" href="home.css">
+<style>
+	body {
+  font-family: "Lato", sans-serif;
+  margin: 0;
+}
+
+.sidenav {
+  height: 90%;
+  width: 240px;
+  position: fixed;
+  z-index: 1;
+  top: 20;
+  left: 0;
+  background-color: #111;
+  overflow-x: hidden;
+  padding-top: 50px;
+}
+
+.sidenav a {
+  padding: 0px 0px 0px 5px;
+  text-decoration: none;
+  font-size: 20px;
+  color: #818181;
+  display: block;
+}
+
+.sidenav a:hover {
+  color: white;
+}
+
+.main {
+  margin-left: 250px; /* Same as the width of the sidenav */
+  font-size: 28px; /* Increased text to enable scrolling */
+  padding: 0px 10px;
+  margin-top: 70px;
+}
+
+@media screen and (max-height: 450px) {
+  .sidenav {padding-top: 15px;}
+  .sidenav a {font-size: 18px;}
+}
+
+p {
+    font-size: 20px;
+    font-style: normal;
+}
+
+.menu {
+    margin-left: 10px;
+    color: white;
+    word-spacing: "Lato";
+}
+
+small {
+    color: yellow;
+}
+input[type=text] {
+  width: 90%;
+  padding: 8px 20px;
+  margin: 8px 10px;
+  box-sizing: border-box;
+}
+</style>
+</head>
+<body>
+	<br>
+        <div class="header">
+            <div class="sub-header">
+                <div class="logo">
+                </div>
+                 <img src="logoo.png" style="height: 95px; width: 150px">
+                <ul class="right-menu">
+                    <li><a href="produkk.html">Produk</a></li>
+                    <li><a href="home.html">Profil</a></li>
+                    <li><a href="acara.html">Acara</a></li>
+                    <li><a href="kranjang.html">Keranjang</a></li>
+                    <li><a class="button" href="Login.html">LogOut</a></li>
+                </ul>
+            </div>
+        </div>
+<div class="sidenav">
+    <form>
+        <input type="text" placeholder="Masukkan Kata Kunci"/>
+    </form>
+  <div class="menu">
+    <p><a class="on" href="profilsentra.html">
+     <h4>Rumah Batik Rolla</h4></a>
+      <small><font color="red">bintang 5</font></small></br>
+      Jl. Kamboja No 7</br>
+      0822-3163-5335</br>
+      Buka . Tutup pukul 21.00</br>
+      <hr font color="grey"></hr>
+   </p>
+   <p><a href="griyabatiknotonegoro.html">
+        <h4>Griya Batik Notonegoro</h4></a>
+         <small><font color="red">bintang 5</font></small></br>
+         Jl. MT Haryono</br>
+         0812-1777-8889</br>
+         Buka . Tutup pukul 21.00</br>
+         <hr font color="grey"></hr>
+      </p>
+      <p><a href="#">
+            <h4>Rumah Batik Wijaya</h4></a>
+             <small><font color="red">bintang 5</font></small></br>
+             Jl. Melati No 72</br>
+             0856-1134-7867</br>
+             Buka . Tutup pukul 21.00</br>
+             <hr font color="grey"></hr>
+          </p>
+          <p><a href="#">
+                <h4>Rumah Batik Wicaksono</h4></a>
+                 <small><font color="red">bintang 5</font></small></br>
+                 Jl. Kamboja No 72</br>
+                 0855-3345-5567</br>
+                 Buka . Tutup pukul 21.00</br>
+                 <hr font color="grey"></hr>
+              </p>
+
+</div>
+</div>
+</div>
+
+
+<div class="main">
+  <h2>Kemeja Batik Pria</h2>
+  <center><img src="kemejabatikpria.png" height="300px" width="400px;"></center>
+<div>
+  <table bgcolor= "blue" border=0></table>
+<tr>
+<center>
+	<td>Rp. 150.000,-</td>
+</center>
+<hr font color="red"></hr>
+</tr>
+</div>
+
+<tr>
+<td>Pengiriman ke</td>
+<td>:</td>
+<td><select name=Pengiriman>
+<option value="KAB.KEDIRI">KAB KEDIRI</option>
+<option value="KAB.BLITAR">KAB BLITAR</option>
+<option value="KAB.MALANG">KAB MALANG</option>
+<option value="KAB.JEMBER">KAB JEMBER</option>
+<option value="KAB.BANYUWANGI">KAB BANYUWANGI</option>
+<option value="KAB.BONDOWOSO">KAB BONDOWOSO</option></td></select>
+</tr>
+<p>
+<tr>
+<td>Ongkos Kirim</td>
+<td>:</td>
+<td><select name=Ongkir>
+<option value="Rp, 1.000-20.000">Rp, 1.000-20.000</option>
+<option value="Rp, 20.000-40.000">Rp, 20.000-40.000</option>
+<option value="Rp, 41.000-80.000">Rp, 41.000-80.000</option>
+<option value="Rp, 81.000-100.000">Rp, 81.000-100.000</option>
+<option value="Rp, 101.000-120.000">Rp, 101.000-120.000</option>
+<option value="Rp, >120.000">Rp, 120.000</option></select></td></select>
+</tr>
+</p>
+<p>
+<tr>
+<td>Kuantitas</td>
+<td>:</td>
+<input type="number" placeholder="masukkan jumlah">
+</tr>
+</p>
+<button>Beli<a href="beli.html"></button>
+
+
+</body>
+</html>
